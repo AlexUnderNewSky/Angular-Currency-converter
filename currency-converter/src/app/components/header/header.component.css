@@ -1,4 +1,4 @@
-/* Стили для header */
+/* Styles for header */
 .header {
   background-color: #4a90e2;
   color: white;
@@ -10,13 +10,13 @@
   transition: transform 0.3s ease;
 }
 
-/* Легкий эффект при наведении */
+/* Light effect when hovering */
 .header:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 30px #00000033;
 }
 
-/* Стили для заголовка */
+/* Styles for the header */
 .header h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -24,16 +24,16 @@
   letter-spacing: 1.5px;
 }
 
-/* Flexbox для выравнивания валют на одной линии */
+/* Flexbox for aligning currencies on one line */
 .currency-rates {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Пробел между валютами */
+  gap: 20px; /* Space between currencies */
   position: relative;
 }
 
-/* Вертикальная полоса между курсами */
+/* Vertical strip between courses */
 .currency-rates::after {
   content: "";
   position: absolute;
@@ -44,7 +44,7 @@
   transform: translateX(-50%);
 }
 
-/* Стили для курсов валют */
+/* Styles for currency rates */
 .currency-rates p {
   font-size: 1.5rem;
   font-weight: 500;
@@ -53,14 +53,14 @@
   text-align: center;
 }
 
-/* Адаптивный дизайн для мобильных устройств */
+/* Adaptive design for mobile devices */
 @media (max-width: 768px) {
   .currency-rates {
-    flex-direction: column; /* Курсы будут располагаться один под другим */
+    flex-direction: column; /* The courses will be placed one below the other */
   }
 
   .currency-rates::after {
-    display: none; /* Убираем полосу на мобильных устройствах */
+    display: none; /* Remove the bar on mobile devices */
   }
 
   .header h1 {

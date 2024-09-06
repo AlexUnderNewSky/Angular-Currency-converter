@@ -1,4 +1,4 @@
-/* Основные стили для контейнера */
+/* Basic styles for the container */
 .converter {
   display: flex;
   justify-content: space-around;
@@ -12,7 +12,7 @@
   margin: 0 auto;
 }
 
-/* Стиль для каждой валютной группы */
+/* Style for each currency group */
 .currency-input {
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
 }
 
-/* Стили для select */
+/* Styles for select */
 .currency-input select {
   width: 100%;
   padding: 12px;
@@ -53,14 +53,14 @@
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
 }
 
-/* Общий стиль для input и select при наведении */
+/* Common style for input and select on hover */
 .currency-input input:hover,
 .currency-input select:hover {
   border-color: #007bff;
   box-shadow: 0 5px 15px rgba(0, 123, 255, 0.1);
 }
 
-/* Адаптивность для мобильных устройств */
+/* Adaptability for mobile devices */
 @media (max-width: 768px) {
   .converter {
     flex-direction: column;
