@@ -26,7 +26,7 @@ export class CurrencyConverterComponent implements OnInit {
   convertCurrency() {
     const fromRate = this.rates[this.fromCurrency];
     const toRate = this.rates[this.toCurrency];
-    this.toAmount = (this.fromAmount / fromRate) * toRate;
+    this.toAmount = +((this.fromAmount / fromRate) * toRate).toFixed(2); //add only 2 numbers after .
   }
 
   onFromAmountChange() {
@@ -36,6 +36,6 @@ export class CurrencyConverterComponent implements OnInit {
   onToAmountChange() {
     const toRate = this.rates[this.toCurrency];
     const fromRate = this.rates[this.fromCurrency];
-    this.fromAmount = (this.toAmount * fromRate) / toRate;
+    this.fromAmount = +((this.toAmount * fromRate) / toRate).toFixed(2); //add only 2 numbers after .
   }
 }
