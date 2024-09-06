@@ -4,7 +4,7 @@ import { CurrencyService } from '../../services/currency.service';
 @Component({
   selector: 'app-currency-converter',
   templateUrl: './currency-converter.component.html',
-  styleUrls: ['./currency-converter.component.css']
+  styleUrls: ['./currency-converter.component.css'],
 })
 export class CurrencyConverterComponent implements OnInit {
   currencies = ['UAH', 'USD', 'EUR'];
